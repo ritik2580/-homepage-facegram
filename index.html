@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACEGRAM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Branding -->
+    <header class="site-branding">
+        <h1 class="animated-title">
+            <span>F</span>
+            <span>A</span>
+            <span>C</span>
+            <span>E</span>
+            <span>G</span>
+            <span>R</span>
+            <span>A</span>
+            <span>M</span>
+        </h1>
+        <p class="tagline">- by Ritik</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="navbar-right">
+            <div class="notifications">
+                <span class="notification-count">3</span>
+                <i class="fas fa-bell"></i>
+                <div class="notification-dropdown">
+                    <p><strong>Kamal liked your post.</strong></p>
+                    <p><strong>Sonam commented on your photo.</strong></p>
+                    <p><strong>Pooja sent you a message.</strong></p>
+                </div>
+            </div>
+            <div class="friend-requests">
+                <span class="request-count">5</span>
+                <i class="fas fa-user-friends"></i>
+                <div class="request-dropdown">
+                    <p><strong>Arjun sent you a friend request.</strong></p>
+                    <p><strong>Kamal sent you a friend request.</strong></p>
+                </div>
+            </div>
+            <button class="profile">Profile</button>
+            <button class="privacy">Privacy</button>
+            <button class="logout">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+          <!-- Spinner for loading content -->
+    <div class="spinner" id="loadingSpinner"></div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Friends List</h3>
+            <ul>
+                <li>Ritik Raj</li>
+                <li>Sonam Gupta</li>
+                <li>Kamal Mehta</li>
+            </ul>
+
+            <h3>Trending</h3>
+            <ul class="trending">
+                <li>#CricketFinals</li>
+                <li>#BollywoodBuzz</li>
+                <li>#IndiaTech</li>
+            </ul>
+        </div>
+
+        <!-- Feed Section -->
+        <div class="feed-section">
+            <!-- Story Section -->
+            <div class="stories-section">
+                <div class="story">
+                    <img src="D:\VLOG\person 1.jpg" alt="Ritik's Story">
+                    <p>Ritik's Story</p>
+                </div>
+                <div class="story">
+                    <img src="D:\VLOG\person 2.jpg" alt="Sonam's Story">
+                    <p>Sonam's Story</p>
+                </div>
+                <div class="story">
+                    <img src="D:\VLOG\person 3.jpg"alt="Pooja's Story">
+                    <p>Pooja's Story</p>
+                </div>
+            </div>
+
+            <!-- Create Post Section -->
+            <div class="create-post">
+                <textarea placeholder="What's on your mind, Ritik?"></textarea>
+                <button class="post-btn">Post</button>
+            </div>
+
+            <!-- Posts Section -->
+            <div class="post">
+                <h3>Kamal Mehta</h3>
+                <p>Just finished a great book on AI!</p>
+                <div class="post-actions">
+                    <button class="like-btn">👍 Like</button>
+                    <button class="comment-btn">💬 Comment</button>
+                </div>
+                <div class="comments-section">
+                    <p><strong>Arjun:</strong> Which book was it?</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <h3>Sonam Gupta</h3>
+                <p>Had a wonderful day at the beach!</p>
+                <div class="post-actions">
+                    <button class="like-btn">👍 Like</button>
+                    <button class="comment-btn">💬 Comment</button>
+                </div>
+                <div class="comments-section">
+                    <p><strong>Pooja:</strong> The pictures are amazing!</p>
+                </div>
+            </div>
+
+            <!-- Reels Section (Instagram-like videos) -->
+            <div class="reels-section">
+                <h3>Watch Reels</h3>
+                <div class="reel">
+                    <video controls>
+                        <source src="reel1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Check out this travel reel!</p>
+                </div>
+                <div class="reel">
+                    <video controls>
+                        <source src="reel2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Cooking hacks with Pooja!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Suggestions Section -->
+        <div class="suggestions-section">
+            <h3>Suggestions for You</h3>
+            <ul>
+                <li>Follow Arjun Sharma</li>
+                <li>Follow Kamal Mehta</li>
+                <li>Join Bollywood Fans Group</li>
+                <li>Like TechTalk Page</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>FACEGRAM © 2024 by Ritik. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
