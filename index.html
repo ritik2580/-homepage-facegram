@@ -3,166 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACEGRAM</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FACEGRAM - by Ritik</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <!-- Header Branding   -->
-    <header class="site-branding">
-        <h1 class="animated-title">
-            <span>F</span>
-            <span>A</span>
-            <span>C</span>
-            <span>E</span>
-            <span>G</span>
-            <span>R</span>
-            <span>A</span>
-            <span>M</span>
-        </h1>
-        <p class="tagline">- by Ritik</p>
-    </header>
-
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="navbar-left">
-            <input type="text" class="search-bar" placeholder="Search...">
+        
+        <div class="logo">
+            <h1 class="animated-logo">FACEGRAM</h1>
+            <p>by Ritik</p>
         </div>
-        <div class="navbar-right">
-            <div class="notifications">
-                <span class="notification-count">3</span>
-                <i class="fas fa-bell"></i>
-                <div class="notification-dropdown">
-                    <p><strong>Kamal liked your post.</strong></p>
-                    <p><strong>Sonam commented on your photo.</strong></p>
-                    <p><strong>Pooja sent you a message.</strong></p>
-                </div>
-            </div>
-            <div class="friend-requests">
-                <span class="request-count">5</span>
-                <i class="fas fa-user-friends"></i>
-                <div class="request-dropdown">
-                    <p><strong>Arjun sent you a friend request.</strong></p>
-                    <p><strong>Kamal sent you a friend request.</strong></p>
-                </div>
-            </div>
-            <button class="profile">Profile</button>
-            <button class="privacy">Privacy</button>
-            <button class="logout">Logout</button>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Facegram...">
+            <i class="fas fa-search"></i>
         </div>
+        
+        <div class="nav-icons">
+            <i class="fas fa-user-friends"></i>
+            <i class="fas fa-comments"></i>
+            <i class="fas fa-bell"></i>
+            <img src="boy.jpg" alt="Profile Picture" class="profile-pic">
+            <button class="logout-btn">Logout</button>
+        </div>
+        
     </nav>
 
     <!-- Main Content -->
-    <div class="main-container">
-          <!-- Spinner for loading content -->
-    <div class="spinner" id="loadingSpinner"></div>
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h3>Friends List</h3>
+    <div class="main-content">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
             <ul>
-                <li>Ritik Raj</li>
-                <li>Sonam Gupta</li>
-                <li>Kamal Mehta</li>
-            </ul>
-
-            <h3>Trending</h3>
-            <ul class="trending">
-                <li>#CricketFinals</li>
-                <li>#BollywoodBuzz</li>
-                <li>#IndiaTech</li>
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-users"></i> Friends</li>
+                <li><i class="fas fa-users-cog"></i> Groups</li>
+                <li><i class="fas fa-calendar-alt"></i> Events</li>
+                <li><i class="fas fa-tv"></i> Watch</li>
+                <li><i class="fas fa-shopping-cart"></i> Marketplace</li>
+                <li><i class="fas fa-cogs"></i> Settings</li>
             </ul>
         </div>
 
         <!-- Feed Section -->
         <div class="feed-section">
-            <!-- Story Section -->
-            <div class="stories-section">
-                <div class="story">
-                    <img src=".\person 1.jpg" alt="Ritik's Story">
-                    <p>Ritik's Story</p>
-                </div>
-                <div class="story">
-                    <img src=".\person 2.jpg" alt="Sonam's Story">
-                    <p>Sonam's Story</p>
-                </div>
-                <div class="story">
-                    <img src=".\person 3.jpg"alt="Pooja's Story">
-                    <p>Pooja's Story</p>
-                </div>
-            </div>
-
-            <!-- Create Post Section -->
             <div class="create-post">
-                <textarea placeholder="What's on your mind, Ritik?"></textarea>
-                <button class="post-btn">Post</button>
+                <img src="boy.jpg" alt="Profile Picture" class="profile-pic-small">
+                <input type="text" placeholder="What's on your mind, Ritik?">
+                <button class="emoji-btn">😀</button>
+                <button>Post</button>
             </div>
 
-            <!-- Posts Section -->
-            <div class="post">
-                <h3>Kamal Mehta</h3>
-                <p>Just finished a great book on AI!</p>
+            <!-- Post Sample 1 -->
+            <div class="post animated-post">
+                <div class="post-header">
+                    <img src="person 1.jpg" alt="Friend's Picture" class="profile-pic-small">
+                    <h4>Sonam Gupta</h4>
+                    <p>1 hr ago</p>
+                </div>
+                <div class="post-content">
+                    <p>Enjoying a wonderful day at the beach!</p>
+                    <img src="beach.jpg" alt="Post Image">
+                </div>
                 <div class="post-actions">
-                    <button class="like-btn">👍 Like</button>
-                    <button class="comment-btn">💬 Comment</button>
+                    <button><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button><i class="fas fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
                 </div>
-                <div class="comments-section">
-                    <p><strong>Arjun:</strong> Which book was it?</p>
-                </div>
+                <div class="post-reactions">
+                    <button class="reaction-btn like-btn">Like</button>
+                    <button class="reaction-btn love-btn">Love</button>
+                    <button class="reaction-btn wow-btn">Wow</button>
+                 </div>
             </div>
 
-            <div class="post">
-                <h3>Sonam Gupta</h3>
-                <p>Had a wonderful day at the beach!</p>
+            <!-- Post Sample 2 -->
+            <div class="post animated-post">
+                <div class="post-header">
+                    <img src="person 3.jpg"alt="Friend's Picture" class="profile-pic-small">
+                    <h4>Arjun Mehta</h4>
+                    <p>2 hrs ago</p>
+                </div>
+                <div class="post-content">
+                    <p>Can't wait for the next adventure!</p>
+                    <img src="mountains.jpg" alt="Post Image">
+                </div>
                 <div class="post-actions">
-                    <button class="like-btn">👍 Like</button>
-                    <button class="comment-btn">💬 Comment</button>
+                    <button><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button><i class="fas fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
                 </div>
-                <div class="comments-section">
-                    <p><strong>Pooja:</strong> The pictures are amazing!</p>
-                </div>
+                <div class="post-reactions">
+                    <button class="reaction-btn like-btn">Like</button>
+                    <button class="reaction-btn love-btn">Love</button>
+                    <button class="reaction-btn wow-btn">Wow</button>
+                 </div>
+                 
             </div>
-
-            <!-- Reels Section (Instagram-like videos) -->
-            <div class="reels-section">
-                <h3>Watch Reels</h3>
-                <div class="reel">
-                    <video controls>
-                        <source src="reel1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Check out this travel reel!</p>
-                </div>
-                <div class="reel">
-                    <video controls>
-                        <source src="reel2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Cooking hacks with Pooja!</p>
-                </div>
-            </div>
-
         </div>
 
-        <!-- Suggestions Section -->
-        <div class="suggestions-section">
-            <h3>Suggestions for You</h3>
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <!-- Profile Section -->
+<section id="profile">
+    <div class="profile-container">
+        <img src="boy 2.jpg" alt="Profile Picture" class="profile-pic">
+        <input type="file" id="uploadProfilePic" class="upload-btn">
+        <textarea class="profile-bio" placeholder="Write your bio here..."></textarea>
+    </div>
+</section>
+
+            <h3>Suggested Friends</h3>
+           <!-- Friend Suggestion Section -->
+<section id="friend-suggestions">
+   <div class="friend-suggestion">
+       <img src="person 2.jpg" alt="Friend Profile" class="friend-pic">
+       <div class="friend-info">
+           <span>Arjun</span>
+           <button class="friend-request-btn" data-user="Arjun">Send Friend Request</button>
+       </div>
+   </div>
+   <div class="friend-suggestion">
+       <img src="lady 1.jpg" alt="Friend Profile" class="friend-pic">
+       <div class="friend-info">
+           <span>Pooja</span>
+           <button class="friend-request-btn" data-user="Pooja">Send Friend Request</button>
+       </div>
+   </div>
+   <!-- Add more friends as needed -->
+</section>
+
+            <h3>Trending Topics</h3>
             <ul>
-                <li>Follow Arjun Sharma</li>
-                <li>Follow Kamal Mehta</li>
-                <li>Join Bollywood Fans Group</li>
-                <li>Like TechTalk Page</li>
+                <li>#StartupIndia</li>
+                <li>#TechWorld</li>
+                <li>#CricketFever</li>
             </ul>
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>FACEGRAM © 2024 by Ritik. All rights reserved.</p>
-        <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
+    <!-- Footer -->
+    <footer>
+        <p>FACEGRAM &copy; 2024 - by Ritik</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Help</a></p>
     </footer>
 
     <script src="scripts.js"></script>
