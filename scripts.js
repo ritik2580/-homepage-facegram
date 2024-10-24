@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const friendRequestButtons = document.querySelectorAll('.friend-request-btn');
     friendRequestButtons.forEach(button => {
         button.addEventListener('click', () => {
-            button.innerText = button.innerText === 'Add Friend' ? 'Friend Request Sent' : 'Add Friend';
+            button.innerText = button.innerText === 'Add Friend' ? 'Friend Request Sent' : 'REQUEST SENT';
             button.classList.toggle('request-sent');
         });
     });
